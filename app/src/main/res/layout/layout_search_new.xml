@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/til_search"
+    style="@style/TextInputLayout.Rounded"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:endIconDrawable="@drawable/ic_close"
+    app:endIconMode="clear_text"
+    app:startIconDrawable="@drawable/ic_asset_search">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/cari"
+        android:maxLines="1"
+        android:padding="0dp"
+        android:singleLine="true"
+        android:textAppearance="@style/textAppearance.Body2" />
+
+</com.google.android.material.textfield.TextInputLayout>

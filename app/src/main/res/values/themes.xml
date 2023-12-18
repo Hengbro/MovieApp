@@ -1,0 +1,338 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+<style name="Base.Theme.MovieApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/white</item>
+    <item name="colorPrimaryVariant">@color/colorPrimary</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/teal_200</item>
+    <item name="colorSecondaryVariant">@color/teal_700</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <item name="colorAccent">@color/colorPrimary</item>
+    <item name="android:windowLightStatusBar">true</item>
+    <!-- Status bar color. -->
+    <!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+    <!-- Customize your theme here. -->
+</style>
+
+<style name="AppProgressbar" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorAccent">@color/colorPrimary</item>
+</style>
+
+<style name="AppTheme.AppToolbar" parent="Base.ThemeOverlay.AppCompat.Light">
+    <item name="colorPrimary">@color/white</item>
+    <item name="android:textColorPrimary">@color/dark</item>
+    <item name="textAllCaps">false</item>
+</style>
+
+<style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+    <item name="android:textSize">@dimen/textCaption3</item>
+</style>
+
+<style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+    <item name="android:textSize">@dimen/textCaption2</item>
+</style>
+
+<style name="TextInputLayout.Auth" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="boxStrokeWidth">0dp</item>
+    <item name="boxStrokeWidthFocused">0dp</item>
+    <item name="hintTextColor">@color/gray3</item>
+    <item name="boxBackgroundColor">@color/white</item>
+</style>
+
+<style name="TextInputLayout.clear" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="boxStrokeWidth">0dp</item>
+    <item name="boxStrokeWidthFocused">0dp</item>
+    <item name="hintEnabled">false</item>
+</style>
+
+<style name="TextInputLayout.Rounded" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="boxCornerRadiusTopStart">@dimen/cornerRadiusNormal</item>
+    <item name="boxCornerRadiusTopEnd">@dimen/cornerRadiusNormal</item>
+    <item name="boxCornerRadiusBottomStart">@dimen/cornerRadiusNormal</item>
+    <item name="boxCornerRadiusBottomEnd">@dimen/cornerRadiusNormal</item>
+    <item name="boxStrokeWidth">0dp</item>
+    <item name="boxStrokeWidthFocused">0dp</item>
+    <item name="hintEnabled">false</item>
+    <item name="boxBackgroundColor">@color/gray5</item>
+</style>
+
+<style name="TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="boxCornerRadiusTopStart">@dimen/cornerRadiusSmall</item>
+    <item name="boxCornerRadiusTopEnd">@dimen/cornerRadiusSmall</item>
+    <item name="boxCornerRadiusBottomStart">@dimen/cornerRadiusSmall</item>
+    <item name="boxCornerRadiusBottomEnd">@dimen/cornerRadiusSmall</item>
+    <item name="boxStrokeWidth">0.5dp</item>
+    <item name="boxStrokeWidthFocused">0.5dp</item>
+    <item name="boxStrokeColor">@color/gray3</item>
+    <item name="hintEnabled">false</item>
+    <item name="boxBackgroundColor">@color/white</item>
+</style>
+
+<style name="Button.Normal" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textAppearance">@style/textAppearance.Body2</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="cornerRadius">@dimen/cornerRadiusNormal</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:inset">0dp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:backgroundTint">@color/main_button_selector</item>
+</style>
+
+<style name="Button.Normal.Green" parent="Button.Normal">
+    <item name="android:backgroundTint">@color/main_button_selector_green</item>
+</style>
+
+<style name="Button.Delete" parent="Button.Normal">
+    <item name="android:strokeColor">@color/colorPrimary</item>
+    <item name="strokeWidth">1dp</item>
+    <item name="strokeColor">@color/colorPrimary</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="android:backgroundTint">@color/white</item>
+</style>
+
+<style name="Button.OutlinePrimary" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textAppearance">@style/textAppearance.Body2</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="cornerRadius">@dimen/cornerRadiusNormal</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:inset">0dp</item>
+    <item name="android:textColor">@color/colorPrimary</item>
+    <item name="strokeWidth">1dp</item>
+    <item name="strokeColor">@color/colorPrimary</item>
+    <item name="android:backgroundTint">@color/white</item>
+</style>
+
+<style name="Button.Normal.Clear" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textAppearance">@style/textAppearance.Body2</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="cornerRadius">@dimen/cornerRadiusNormal</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:inset">0dp</item>
+    <item name="android:textColor">@color/white</item>
+</style>
+
+<style name="Button.OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textAppearance">@style/textAppearance.Body2</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="cornerRadius">@dimen/cornerRadiusNormal</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:inset">0dp</item>
+</style>
+
+<style name="Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textAppearance">@style/textAppearance.Body3</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="cornerRadius">@dimen/cornerRadiusNormal</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:inset">0dp</item>
+</style>
+
+<style name="Button.UnelevatedButton" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="fontFamily">@font/worksans_semibold</item>
+    <item name="android:fontFamily">@font/worksans_semibold</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:textAppearance">@style/textAppearance.Body2</item>
+</style>
+
+<style name="textAppearance.TextParent" parent="TextAppearance.MaterialComponents.Subtitle1">
+    <item name="fontFamily">@font/worksans_regular</item>
+    <item name="android:fontFamily">@font/worksans_regular</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:includeFontPadding">false</item>
+</style>
+
+<style name="textAppearance.TextParent.Bold" parent="TextAppearance.MaterialComponents.Subtitle1">
+    <item name="fontFamily">@font/worksans_semibold</item>
+    <item name="android:fontFamily">@font/worksans_semibold</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:includeFontPadding">false</item>
+</style>
+
+<style name="textAppearance.Caption1" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textCaption1</item>
+</style>
+
+<style name="textAppearance.Caption1.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textCaption1</item>
+</style>
+
+<style name="textAppearance.Caption2" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textCaption2</item>
+</style>
+
+<style name="textAppearance.Caption2.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textCaption2</item>
+</style>
+
+<style name="textAppearance.Caption3" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textCaption3</item>
+</style>
+
+<style name="textAppearance.Caption3.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textCaption3</item>
+</style>
+
+<style name="textAppearance.Caption4" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textCaption4</item>
+</style>
+
+<style name="textAppearance.Caption4.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textCaption4</item>
+</style>
+
+<style name="textAppearance.Body3" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textBody3</item>
+</style>
+
+<style name="textAppearance.Body3.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textBody3</item>
+</style>
+
+<style name="textAppearance.Body2" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textBody2</item>
+</style>
+
+<style name="textAppearance.Body2.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textBody2</item>
+</style>
+
+<style name="textAppearance.Body1" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textBody1</item>
+</style>
+
+<style name="textAppearance.Body1.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textBody1</item>
+</style>
+
+<style name="textAppearance.Heading1" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textHeading1</item>
+</style>
+
+<style name="textAppearance.Heading1.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textHeading1</item>
+</style>
+
+<style name="textAppearance.Heading2" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textHeading2</item>
+</style>
+
+<style name="textAppearance.Heading2.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textHeading2</item>
+</style>
+
+<style name="textAppearance.Heading3" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textHeading3</item>
+</style>
+
+<style name="textAppearance.Heading3.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textHeading3</item>
+</style>
+
+<style name="textAppearance.Heading4" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textHeading4</item>
+</style>
+
+<style name="textAppearance.Heading4.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textHeading4</item>
+</style>
+
+<style name="textAppearance.Heading5" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textHeading5</item>
+</style>
+
+<style name="textAppearance.Heading5.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textHeading5</item>
+</style>
+
+<style name="textAppearance.Heading6" parent="textAppearance.TextParent">
+    <item name="android:textSize">@dimen/textHeading6</item>
+</style>
+
+<style name="textAppearance.Heading6.Bold" parent="textAppearance.TextParent.Bold">
+    <item name="android:textSize">@dimen/textHeading6</item>
+</style>
+
+<style name="textAppearance.Button.Normal" parent="Button.UnelevatedButton">
+    <item name="cornerRadius">@dimen/_15sdp</item>
+</style>
+
+<style name="textAppearance.MaterialCardView.Normal" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="cardCornerRadius">@dimen/_8sdp</item>
+    <item name="cardElevation">@dimen/_2sdp</item>
+</style>
+
+<style name="MaterialCardView.CardChatOther" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopRight">@dimen/_10sdp</item>
+    <item name="cornerSizeTopLeft">0dp</item>
+    <item name="cornerSizeBottomRight">@dimen/_10sdp</item>
+    <item name="cornerSizeBottomLeft">@dimen/_10sdp</item>
+</style>
+
+<style name="CardChatUser" parent="@style/Widget.MaterialComponents.CardView">
+    <item name="shapeAppearanceOverlay">@style/MaterialCardView.CardChatUser</item>
+</style>
+
+<style name="MaterialCardView.CardChatUser" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopRight">0dp</item>
+    <item name="cornerSizeTopLeft">@dimen/_10sdp</item>
+    <item name="cornerSizeBottomRight">@dimen/_10sdp</item>
+    <item name="cornerSizeBottomLeft">@dimen/_10sdp</item>
+</style>
+
+<style name="CardChatOther" parent="@style/Widget.MaterialComponents.CardView">
+    <item name="shapeAppearanceOverlay">@style/MaterialCardView.CardChatOther</item>
+</style>
+
+<style name="AppTabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabIndicatorHeight">1dp</item>
+    <item name="tabIndicatorColor">@color/colorPrimary</item>
+    <item name="tabIndicatorFullWidth">true</item>
+    <item name="tabTextColor">@color/gray3</item>
+    <item name="tabRippleColor">@null</item>
+    <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    <item name="tabTextAppearance">@style/textAppearance.Caption1</item>
+</style>
+
+<style name="AppTabLayout.Transaction" parent="AppTabLayout">
+    <item name="tabMaxWidth">0dp</item>
+    <item name="tabGravity">fill</item>
+    <item name="tabTextColor">@color/colorPrimary</item>
+    <item name="tabMode">fixed</item>
+</style>
+
+<style name="MaterialCardView.Outline.Border" parent="">
+    <item name="cardElevation">0dp</item>
+    <item name="cardCornerRadius">@dimen/_5sdp</item>
+    <item name="strokeWidth">1dp</item>
+    <item name="strokeColor">@color/gray4</item>
+</style>
+
+<style name="Main.AppTabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabIndicatorHeight">0dp</item>
+    <item name="tabIndicatorFullWidth">false</item>
+    <item name="tabTextColor">@color/gray3</item>
+    <item name="tabRippleColor">@null</item>
+    <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    <item name="tabTextAppearance">@style/textAppearance.Body3.Bold</item>
+</style>
+
+<style name="AppTabLayout.Payment" parent="Main.AppTabLayout">
+    <item name="tabMaxWidth">0dp</item>
+    <item name="tabGravity">fill</item>
+    <item name="tabTextColor">@color/gray4</item>
+    <item name="tabMode">fixed</item>
+</style>
+
+</resources>

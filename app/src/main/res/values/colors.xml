@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white1">#FFFDFD</color>
+    <color name="water">#EFFFFF</color>
+
+    <color name="colorPrimary">@color/colorPrimary_700</color>
+    <color name="colorPrimaryDark">@color/colorPrimary_800</color>
+    <color name="colorPrimaryVariant">#F9591D</color>
+    <color name="colorAccent">#00C717</color>
+    <color name="colorText">#121931</color>
+    <color name="colorText2">#DB3975</color>
+
+    <color name="colorSecondary">@color/colorSecondary_700</color>
+    <color name="colorSecondaryDark">@color/colorSecondary_800</color>
+
+    <color name="orange">#FF9800</color>
+    <color name="backgroud_white">#EDF8F8F8</color>
+    <color name="blue">#0E87F0</color>
+    <color name="dark">#1C2029</color>
+    <color name="shimmer">#A4ECECEC</color>
+    <color name="red">#ff0000</color>
+    <color name="transparant">#C4000000</color>
+    <color name="transparant1">#C44A4A4A</color>
+    <color name="transparant2">#1DE8E8E8</color>
+    <color name="transparant_full">#00FFFFFF</color>
+    <color name="toolbar">#FFFFFF</color>
+    <color name="light">#FFFFFFFF</color>
+
+    <color name="delete">#E60000</color>
+    <color name="green_normal">#069517</color>
+    <color name="green_old">#009549</color>
+
+    <color name="dimulai">#8BC34A</color>
+    <color name="akandimulai">#FFC107</color>
+    <color name="colorStand">#73000000</color>
+
+    <color name="menungu">#FF6B3C</color>
+    <color name="selesai">#008506</color>
+    <color name="batal">#FF387C</color>
+
+    <color name="menunguSoft">#FFC107</color>
+    <color name="selesaiSoft">#00B608</color>
+    <color name="batalSoft">#FF387C</color>
+
+    <color name="menunguSecondary">#FFF3CE</color>
+    <color name="selesaiSecondary">#C6FFC9</color>
+    <color name="batalSecondary">#FFDFEA</color>
+
+    <color name="steel">#F4F4F4</color>
+    <color name="green_light">#4caf50</color>
+
+    <!--    <color name="grey">#F1F1F1</color>-->
+    <!--    <color name="grey0">#FAFAFA</color>-->
+    <!--    <color name="grey1">#F5F5F5</color>-->
+    <!--    <color name="grey2">#EEEEEE</color>-->
+    <!--    <color name="grey3">#E0E0E0</color>-->
+    <!--    <color name="grey4">#BDBDBD</color>-->
+    <!--    <color name="grey5">#9E9E9E</color>-->
+    <!--    <color name="grey6">#757575</color>-->
+    <!--    <color name="grey7">#616161</color>-->
+    <!--    <color name="grey8">#424242</color>-->
+    <!--    <color name="grey9">#212121</color>-->
+    <!--    <color name="grey10">#F8F8F8</color>-->
+
+    <color name="colorPrimary_10">@color/blue_donker_10</color>
+    <color name="colorPrimary_50">@color/blue_donker_50</color>
+    <color name="colorPrimary_100">@color/blue_donker_100</color>
+    <color name="colorPrimary_200">@color/blue_donker_200</color>
+    <color name="colorPrimary_300">@color/blue_donker_300</color>
+    <color name="colorPrimary_400">@color/blue_donker_400</color>
+    <color name="colorPrimary_500">@color/blue_donker_500</color>
+    <color name="colorPrimary_600">@color/blue_donker_600</color>
+    <color name="colorPrimary_700">@color/blue_donker_700</color>
+    <color name="colorPrimary_800">@color/blue_donker_800</color>
+    <color name="colorPrimary_900">@color/blue_donker_900</color>
+
+    <color name="colorSecondary_10">@color/orange_10</color>
+    <color name="colorSecondary_50">@color/orange_50</color>
+    <color name="colorSecondary_100">@color/orange_100</color>
+    <color name="colorSecondary_200">@color/orange_200</color>
+    <color name="colorSecondary_300">@color/orange_300</color>
+    <color name="colorSecondary_400">@color/orange_400</color>
+    <color name="colorSecondary_500">@color/orange_500</color>
+    <color name="colorSecondary_600">@color/orange_600</color>
+    <color name="colorSecondary_700">@color/orange_700</color>
+    <color name="colorSecondary_800">@color/orange_800</color>
+    <color name="colorSecondary_900">@color/orange_900</color>
+
+    <color name="grey_foreground">#F5F5F5</color>
+
+    <color name="secondary_100">#FFDC98</color>
+    <color name="secondary_300">#FFD176</color>
+    <color name="secondary_500">#FFC554</color>
+    <color name="secondary_700">#CC9E43</color>
+    <color name="secondary_900">#997632</color>
+
+    <color name="natural_100">#DBDBDA</color>
+    <color name="natural_300">#CFCFCE</color>
+    <color name="natural_500">#C3C3C2</color>
+    <color name="natural_700">#9C9C9B</color>
+    <color name="natural_900">#757574</color>
+
+    <color name="backgroud">#F1F2F6</color>
+
+    <color name="indigo_10">#F8F9FF</color>
+
+    <color name="yellowSoft">#FFC107</color>
+    <color name="greenSoft">#00B608</color>
+    <color name="pinkSoft">#FF387C</color>
+
+    <color name="yellowSoftSecondary">#FFF3CE</color>
+    <color name="greenSoftSecondary">#C6FFC9</color>
+    <color name="pinkSoftSecondary">#FFDFEA</color>
+
+    <color name="blue_donker_10">#F6F9FD</color>
+    <color name="blue_donker_50">#e7eaf1</color>
+    <color name="blue_donker_100">#c4c9de</color>
+    <color name="blue_donker_200">#9ea7c7</color>
+    <color name="blue_donker_300">#7985b0</color>
+    <color name="blue_donker_400">#5d6aa0</color>
+    <color name="blue_donker_500">#435191</color>
+    <color name="blue_donker_600">#3c4a89</color>
+    <color name="blue_donker_700">#34407d</color>
+    <color name="blue_donker_800">#2d3770</color>
+    <color name="blue_donker_900">#222759</color>
+
+    <color name="orange_10">#FFF8ED</color>
+    <color name="orange_50">#FFF3E0</color>
+    <color name="orange_100">#FFE0B2</color>
+    <color name="orange_200">#FFCC80</color>
+    <color name="orange_300">#FFB74D</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="orange_600">#FB8C00</color>
+    <color name="orange_700">#F57C00</color>
+    <color name="orange_800">#EF6C00</color>
+    <color name="orange_900">#E65100</color>
+    <color name="orange_1">#FFD180</color>
+    <color name="orange_2">#FFAB40</color>
+    <color name="orange_3">#FF9100</color>
+    <color name="orange_4">#FF6D00</color>
+
+    <!--    <color name="green_10">#E3FFEC</color>-->
+    <!--    <color name="green_50">#e1fbe8</color>-->
+    <!--    <color name="green_700">#00b01c</color>-->
+
+    <color name="red_50">#ffe8e6</color>
+    <color name="red_700">#ff1900</color>
+
+    <color name="green_10">#F9FFFC</color>
+    <color name="green_50">#e5f6ec</color>
+    <color name="green_100">#c1e8d1</color>
+    <color name="green_200">#98d8b4</color>
+    <color name="green_300">#6bca97</color>
+    <color name="green_400">#45bf81</color>
+    <color name="green_500">#07b36b</color>
+    <color name="green_600">#00a461</color>
+    <color name="green_700">#009154</color>
+    <color name="green_800">#008048</color>
+    <color name="green_900">#006133</color>
+
+    <color name="blue_10">#F5FBFF</color>
+    <color name="blue_50">#E3F2FD</color>
+    <color name="blue_100">#BBDEFB</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_300">#64B5F6</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_600">#1E88E5</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="blue_800">#1565C0</color>
+    <color name="blue_900">#0D47A1</color>
+    <color name="blue_1">#82B1FF</color>
+    <color name="blue_2">#448AFF</color>
+    <color name="blue_3">#2979FF</color>
+    <color name="blue_4">#2962FF</color>
+
+    <color name="gray1">#292929</color>
+    <color name="gray2">#5C5C5C</color>
+    <color name="gray3">#8F8F8F</color>
+    <color name="gray4">#C2C2C2</color>
+    <color name="gray5">#F5F5F5</color>
+
+    <color name="green1">#042A18</color>
+    <color name="green2">#086336</color>
+    <color name="green3">#0D9B54</color>
+    <color name="green4">#78F0B4</color>
+    <color name="green5">#ECFEF5</color>
+
+    <color name="red1">#52001B</color>
+    <color name="red2">#B80006</color>
+    <color name="red3">#FF1F26</color>
+    <color name="red4">#FF8589</color>
+    <color name="red5">#FFEBEB</color>
+</resources>

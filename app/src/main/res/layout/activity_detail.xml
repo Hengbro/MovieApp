@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutRek"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:orientation="vertical"
+                app:cardCornerRadius="@dimen/cornerRadiusSmall"
+                android:elevation="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_350sdp">
+
+                <ImageView
+                    android:id="@+id/img_film"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_asset_home" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/name"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/textAppearance.Heading3.Bold"/>
+
+                <RelativeLayout
+                    android:id="@+id/lyCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/paddingTiny">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/movie_item" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTgl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_gravity="center_vertical"
+                            android:text="Des, 10 2023 (US)"
+                            android:textAppearance="@style/textAppearance.Body2"/>
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:background="@color/gray1"
+                            android:layout_marginHorizontal="@dimen/marginSmall"
+                            android:layout_gravity="center_vertical"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:src="@drawable/ic_asset_solid_star"
+                                android:layout_gravity="center_vertical"
+                                app:tint="#FFC107" />
+
+                            <TextView
+                                android:id="@+id/tv_reting"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:text="4.9"
+                                android:textAppearance="@style/textAppearance.Body2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/marginSmall">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/small_height"
+                            android:elevation="0dp"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="@dimen/cornerRadiusLarge">
+
+                            <ImageView
+                                android:layout_width="@dimen/buttonImage"
+                                android:layout_height="@dimen/buttonImage"
+                                android:src="@drawable/ic_asset_thumbs_up"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/buttonImagePadding" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_AddFavorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/small_height"
+                            android:elevation="0dp"
+                            app:cardElevation="0dp"
+                            android:layout_marginStart="@dimen/marginSmall"
+                            app:cardCornerRadius="@dimen/cornerRadiusLarge">
+
+                            <ImageView
+                                android:layout_width="@dimen/buttonImage"
+                                android:layout_height="@dimen/buttonImage"
+                                android:src="@drawable/ic_asset_heart"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/buttonImagePadding" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/btn_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/small_height"
+                            android:elevation="0dp"
+                            app:cardElevation="0dp"
+                            android:layout_marginStart="@dimen/marginSmall"
+                            app:cardCornerRadius="@dimen/cornerRadiusLarge">
+
+                            <ImageView
+                                android:layout_width="@dimen/buttonImage"
+                                android:layout_height="@dimen/buttonImage"
+                                android:src="@drawable/ic_asset_rate_cards"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/buttonImagePadding" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/small_height"
+                            android:elevation="0dp"
+                            app:cardElevation="0dp"
+                            android:layout_marginStart="@dimen/marginSmall"
+                            app:cardCornerRadius="@dimen/cornerRadiusLarge">
+
+                            <ImageView
+                                android:layout_width="@dimen/buttonImage"
+                                android:layout_height="@dimen/buttonImage"
+                                android:src="@drawable/ic_asset_hamburger_menu"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/buttonImagePadding" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskription"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/textAppearance.Body2.Bold"/>
+
+                <TextView
+                    android:id="@+id/tv_deskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isi Deskripsi, biasayanya berisi overview"
+                    android:layout_gravity="center_horizontal"
+                    android:textAppearance="@style/textAppearance.Body3"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Top rated"
+                    android:layout_marginTop="@dimen/marginMedium"
+                    android:layout_marginStart="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body2.Bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pdTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerInParent="true" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:scrollbars="none"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_top"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                app:spanCount="2"
+                                tools:itemCount="6"
+                                tools:listitem="@layout/item_top_rate" />
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recomended"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:paddingVertical="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body2.Bold"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pdRekomended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_centerInParent="true" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:scrollbars="none"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_recomended"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:orientation="vertical"
+                                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                                app:spanCount="2"
+                                tools:itemCount="6"
+                                tools:listitem="@layout/item_recomended" />
+
+                        </RelativeLayout>
+
+                    </HorizontalScrollView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/small_height"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/transparant2"
+        android:layout_margin="@dimen/marginNormal"
+        app:cardCornerRadius="@dimen/_100sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/buttonImage"
+            android:layout_height="@dimen/buttonImage"
+            android:src="@drawable/ic_asset_close"
+            android:layout_gravity="center"
+            android:tint="@color/white"
+            android:padding="@dimen/buttonImagePadding" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

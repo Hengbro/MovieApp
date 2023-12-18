@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="name">Name</string>
+    <string name="genre">Genre</string>
+    <string name="login_untuk_melanjutkan">Login untuk melanjutkan</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="lupa_password">Lupa password</string>
+    <string name="belum_punya_akun">Belum punya akun</string>
+    <string name="daftar">Daftar</string>
+    <string name="atau_masuk_dengan">Atau masuk dengan</string>
+    <string name="google">Google</string>
+    <string name="v1_1_1">v1 1 1</string>
+</resources>
